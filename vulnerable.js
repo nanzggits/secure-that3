@@ -12,12 +12,21 @@ app.use(bodyParser.json());
  * - Attackers can inject and execute arbitrary code.
  */
 app.post('/execute', (req, res) => {
-    let userInput = req.body.code;
-    try {
-        let result = vm.runInNewContext(userInput); // ⚠️ UNSAFE: Executes user-supplied JavaScript code
-        res.json({ result });
-    } catch (error) {
-        res.status(500).json({ error: 'Execution failed' });
+    const allowedCommands = {
+        'command1': () => { return 'Result of command1'; },
+        'command2': () => { return 'Result of command2'; },
+        // Add more allowed commands as needed
+    };
+    let userInput = req.body.command;
+    if (allowedCommands.hasOwnProperty(userInput)) {
+        try {
+            let result = allowedCommands[userInput]();
+            res.json({ result });
+        } catch (error) {
+            res.status(500).json({ error: 'Execution failed' });
+        }
+    } else {
+        res.status(400).json({ error: 'Invalid command' });
     }
 });
 
