@@ -47,7 +47,7 @@ Each section contains a **practical exercise** to apply these security best prac
 - Navigate to **Settings > Code security & analysis**.  
 - Ensure that both **"Secret scanning"** and **"Push protection"** are enabled.  
 
-##### **2. Commit a Secret Using the GitHub UI**  
+##### **2. Commit a Secret Using the GitHub**  
 - Navigate to **`code.js`** and click the **pencil (✏️) edit button**.  
 - Replace the placeholder values with an AWS secret:  
   ```javascript
