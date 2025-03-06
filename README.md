@@ -22,7 +22,7 @@ Each section below contains a **practical exercise** to apply these security bes
 1. **Fork this repository** to your GitHub account.
 2. **Enable Code Scanning** in your repository:
    - Go to **Settings > Security > Code Security > Code Scanning**.
-   - Click **Enable Default Setup** for **CodeQL Analysis**.
+   - Click **Enable Default Setup** for **CodeQL Analysis**. These events will trigger a new scan on push and pull requests to main and protected branches.
    - Click **Enable CodeQL**.
    - In the **Actions** tab, CodeQL Setup is in progress.
 3. **Review vulnerabilities flagged by CodeQL**:
