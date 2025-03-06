@@ -24,7 +24,7 @@ Each section below contains a **practical exercise** to apply these security bes
    - Go to **Settings > Security > Code Security > Code Scanning**.
    - Click **Enable Default Setup** for **CodeQL Analysis**. These events will trigger a new scan on push and pull requests to main and protected branches.
    - Click **Enable CodeQL**.
-   - In the **Actions** tab, CodeQL Setup is in progress.
+   - In the **Actions** tab, CodeQL Setup is in progress. Wait a couple minutes.
 3. **Review vulnerabilities flagged by CodeQL**:
    - Open **Settings > Security > Code Security > Code Scanning**.
    - In the ellipsis menu of **CodeQL analysis**, select **View Code Scanning alerts**.
