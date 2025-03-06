@@ -1,7 +1,7 @@
-# **Secure Open Source Training Repository**
+# **Secure Open Source Training Repository**  
 
 ## 🛠️ **What You'll Learn**  
-This repository is designed for **hands-on exercises** to help you **secure open-source projects on GitHub**. You'll learn how to:
+This repository is designed for **hands-on exercises** to help you **secure open-source projects on GitHub**. You'll learn how to:  
 
 - **Find and fix vulnerabilities** using **CodeQL and Copilot Autofix**  
 - **Detect and remove hardcoded secrets** using **GitHub Secret Scanning & Push Protection**  
@@ -9,14 +9,14 @@ This repository is designed for **hands-on exercises** to help you **secure open
 - **Prevent unreviewed code from being merged** by enabling **branch protection**  
 - **Set up responsible security reporting** with **SECURITY.md and Private Vulnerability Reporting (PVR)**  
 
-Each section contains a **practical exercise** to apply these security best practices.
+Each section contains a **practical exercise** to apply these security best practices.  
 
 ---
 
 ## 🔒 **Hands-on Security Exercises**  
 
 ### **1. Running Code Scanning (CodeQL) & Using Copilot Autofix**  
-📌 **Objective:** Use **CodeQL scanning** to detect vulnerabilities and **Copilot Autofix** to quickly fix them.
+📌 **Objective:** Use **CodeQL scanning** to detect vulnerabilities and **Copilot Autofix** to quickly fix them.  
 
 #### **Steps**  
 1. **Fork this repository** to your GitHub account.  
@@ -36,10 +36,12 @@ Each section contains a **practical exercise** to apply these security best prac
    - Click **Commit change** to open a **pull request**.  
    - Click **Ready for review** and **Merge pull request**.  
 
+✅ **Now, your repository has CodeQL enabled and can automatically detect vulnerabilities!**  
+
 ---
 
 ### **2. Detecting and Managing Secrets (Secret Scanning & Push Protection)**  
-📌 **Objective:** Learn how to verify **Secret Scanning and Push Protection settings**, commit a secret using the GitHub UI, view secret alerts, and properly remove exposed secrets.
+📌 **Objective:** Learn how to verify **Secret Scanning and Push Protection settings**, commit a secret using the GitHub UI, view secret alerts, and properly remove exposed secrets.  
 
 #### **Steps**  
 
@@ -47,7 +49,7 @@ Each section contains a **practical exercise** to apply these security best prac
 - Navigate to **Settings > Code security & analysis**.  
 - Ensure that both **"Secret scanning"** and **"Push protection"** are enabled.  
 
-##### **2. Commit a Secret Using the GitHub**  
+##### **2. Commit a Secret Using the GitHub UI**  
 - Navigate to **`code.js`** and click the **pencil (✏️) edit button**.  
 - Replace the placeholder values with an AWS secret:  
   ```javascript
@@ -72,10 +74,12 @@ Each section contains a **practical exercise** to apply these security best prac
   - **Revoke the exposed secret** (if applicable).  
   - **Remove it from the codebase** properly.  
 
+✅ **Now, your repository is protected against secret leaks!**  
+
 ---
 
 ### **3. Updating Dependencies (Dependabot)**  
-📌 **Objective:** Use **Dependabot** to detect and update outdated dependencies.
+📌 **Objective:** Use **Dependabot** to detect and update outdated dependencies.  
 
 #### **Steps**  
 1. **Enable Dependabot**:  
@@ -89,10 +93,12 @@ Each section contains a **practical exercise** to apply these security best prac
    - Follow instructions to **create a pull request (PR)** for the update.  
    - **Merge the PR** to apply the update.  
 
+✅ **Now, your repository is set up to detect and fix vulnerable dependencies!**  
+
 ---
 
 ### **4. Configuring Branch Protection**  
-📌 **Objective:** Set up **branch protection rules** to enforce security best practices.
+📌 **Objective:** Set up **branch protection rules** to enforce security best practices.  
 
 #### **Steps**  
 
@@ -115,10 +121,12 @@ Each section contains a **practical exercise** to apply these security best prac
 - Click **"Create pull request"**, add a description, and submit it.  
 - **Request approval** (if required) and merge the pull request.  
 
+✅ **Now, your repository is protected against unreviewed changes!**  
+
 ---
 
 ### **5. Handling a Security Report (`SECURITY.md` & Private Vulnerability Reporting)**  
-📌 **Objective:** Learn how to **set up a security policy, report, and manage vulnerabilities responsibly**.
+📌 **Objective:** Learn how to **set up a security policy, report, and manage vulnerabilities responsibly**.  
 
 #### **Steps**  
 
