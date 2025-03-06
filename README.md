@@ -66,7 +66,7 @@ Each section contains a **practical exercise** to apply these security best prac
 
 ##### **4. View Secret Scanning Alerts**  
 - Go to **Security > Secret Scanning**.  
-- 📝 **Note:** The **Security** tab is under the **ellipsis menu (…)** in the top-right corner.  
+- 📝 **Note:** The **Security** tab is under the **ellipsis menu (…)** in the top-right corner.
 
 ##### **5. Respond to a Secret Scanning Alert**  
 - Locate the **alert for the committed secret**.  
@@ -74,6 +74,13 @@ Each section contains a **practical exercise** to apply these security best prac
   - **Revoke the exposed secret** (if applicable).  
   - **Remove it from the codebase** properly.  
 
+
+#### **📌 N.B.: Revoking Secrets from the Service Provider**  
+🔴 **Removing the secret from your repository does not revoke its access.** If a real AWS key (or any secret) is exposed, you must:  
+1. **Go to your AWS account or the service provider** where the key was generated.  
+2. **Revoke or rotate the secret** to prevent unauthorized use.  
+3. **Update your application** with a new, secure secret stored safely (e.g., environment variables).
+   
 ✅ **Now, your repository is protected against secret leaks!**  
 
 ---
